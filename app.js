@@ -3,9 +3,8 @@ $(document).ready(function() {
 		event.preventDefault();
 		var something = $('#inputBox').val();
 		// if user inputs nothing and hits enter, alert will pop up and nothing is appended
-		if (something == " ") {
+		if (something === "") {
 			alert('Please enter an item!');
-
 		}
 		//otherwise, text is appended as a li to the shopping list
 		else {
