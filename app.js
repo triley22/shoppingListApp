@@ -1,4 +1,5 @@
-$(document).ready(function() {
+console.log(jQuery);
+jQuery(document).ready(function() {
 	$('#userInput').submit(function(event) {
 		event.preventDefault();
 		var something = $('#inputBox').val();
@@ -15,7 +16,6 @@ $(document).ready(function() {
 	});
 
 });
-
 //functions to delete and strikethrough code when checkbox and trashcan are clicked
 assignlisteners();
 function assignlisteners() {
