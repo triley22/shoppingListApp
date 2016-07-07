@@ -3,12 +3,13 @@ $(document).ready(function() {
 		event.preventDefault();
 		var something = $('#inputBox').val();
 		// if user inputs nothing and hits enter, alert will pop up and nothing is appended
-		if (something === "") {
-			alert('Please enter an item!')
+		if (something == " ") {
+			alert('Please enter an item!');
+
 		}
 		//otherwise, text is appended as a li to the shopping list
 		else {
-			$('.allItems ul').append("<li class='currentItem'> <img class='checked' src='assets/check.png'/>" + " " + something + " " + "<img src='assets/delete.png'/ class='trash'></li>");	
+		$('.allItems ul').append("<li class='currentItem'> <img class='checked' src='http://i.imgur.com/Gxl1eNO.png'/>" + " " + something + " " + "<img src='http://i.imgur.com/YychSSn.png'/ class='trash'></li>");	
 		}
 		// resets the textbox after item is entered
 		$('#userInput')[0].reset();
